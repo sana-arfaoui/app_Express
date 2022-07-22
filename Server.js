@@ -4,7 +4,7 @@ var router = express.Router();
 var path = __dirname + '/Views/';
 const path2 = require('path');
 const getDate = (req, res, next) => {
-  console.log("Time:", new Date())
+  
   if ((new Date().getDay() > 0 && new Date().getDay() < 6) && (new Date().getHours() >= 9 && (new Date().getHours() + 1) <= 17)) {
       console.log("app is open ")
       next()
