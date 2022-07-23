@@ -10,6 +10,7 @@ const getDate = (req, res, next) => {
       next()
   } else {
       console.log("app is closed ")
+      res.end(' sorry !!!! The web application is only available during working hours (Monday to Friday,  from 9 to 17)')
   }
 }
 app.use(getDate);
